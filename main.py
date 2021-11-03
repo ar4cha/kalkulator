@@ -9,6 +9,12 @@ def statistiska():
     burtuk = int(input("eksperimentu skaits:"))
 
     w = burtum/burtuk;
+
+    if burtum < 0:
+        print("\033[93mJusu pirmais skailtlis nevar but negativs, meginiet velreiz")
+        statistiska()
+
+
     print("\033[1;34;40m statistiskā varbūtība =" + format( w, ",.2f"))
     procent = w*100
     print("Tas bus " + format(procent,",.2f")+"%"+" statistiskā varbūtība")
@@ -32,8 +38,8 @@ def klasiska():
     labveligo = int(input("\033[93mlabvēlīgo notikumu skaits:"))
     notikumu = int (input("visu notikumu kopskaits:"))
 
-    klasiska = labveligo/notikumu
-    procent2 = klasiska*100
+    klasika = labveligo/notikumu
+    procent2 = klasika*100
 
     print("\033[1;97;40mvarbūtība ir = " + format( procent2, ",.2f")+'%')
 
