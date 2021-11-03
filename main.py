@@ -33,8 +33,9 @@ def klasiska():
     notikumu = int (input("visu notikumu kopskaits:"))
 
     klasiska = labveligo/notikumu
+    procent2 = klasiska*100
 
-    print("\033[1;97;40mvarbūtība ir =" + format( klasiska, ",.2f"))
+    print("\033[1;97;40mvarbūtība ir = " + format( procent2, ",.2f")+'%')
 
 
 if __name__ == '__main__':
