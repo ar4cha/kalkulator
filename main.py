@@ -2,7 +2,7 @@
 #Varbutibu kalkulators
 # Autors: Artjoms Kasperovics
 # Datums: 03.11.2021 V2V
-
+import math
 def statistiska():
 
     burtum = int(input("\033[95m notikumu skaits:"))
@@ -24,9 +24,9 @@ def geometriksa():
 
     radius = int(input("\033[95mKada radius un tilpumi:"))
     malas = int(input("kada malas garumu:"))
-    π = 3.14
+    π = math.pi
 
-    kvadrats= (malas*malas)/(radius*radius)*π
+    kvadrats= (math.pow(malas, 2)) / ((math.pow(radius, 2))) * π
 
     procents = kvadrats*100
 
