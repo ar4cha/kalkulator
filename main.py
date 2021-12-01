@@ -43,8 +43,8 @@ def klasiska():
 
     print("\033[1;97;40mvarbūtība ir = " + format( procent2, ",.2f")+'%')
 
-
-if __name__ == '__main__':
+def main():
+    if __name__ == '__main__':
         choice = input("\033[97m Kada veida varbutibas aprekini Tev sodien padoma? \n"
                    "\033[97m Ievadi burtu:\n"
                     "\033[95m-K klasiska metode n no n\n"
@@ -56,5 +56,11 @@ if __name__ == '__main__':
             geometriksa()
         if choice.lower() == 's':
             statistiska()
-        else:
-            exit(0)
+while True:
+       main()
+       restart = input('\033[97;0mdo you want again?').lower()
+       if restart == "yes":
+           main()
+       else:
+           print("\033[91mGoodbye")
+           exit(0)
